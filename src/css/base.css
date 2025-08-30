@@ -20,40 +20,6 @@ main:has(.back-link) {
   text-align: center;
 }
 
-/* RESET */
-
-ol,
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-  font-family: inherit;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
