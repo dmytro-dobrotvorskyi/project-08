@@ -1,0 +1,131 @@
+.title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0b0803;
+}
+
+.text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #0b0803;
+}
+
+.sub-text {
+    display: flex;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #0b0803;
+}
+
+.btn {
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 181px;
+    height: 44px;
+    margin-top: 32px;
+}
+
+.welcome {
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    margin-top: 64px;
+}
+
+.welcome-wrapper {
+    width: 1312px;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.welcome-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+
+
+.welcome-header {
+    width: auto;
+    display: block;
+}
+
+
+ @media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+ }
+
+ @media screen and (min-width: 1158px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+ }
+
+    @media screen and (min-width: 768px) {
+        .welcome {
+            flex-direction: row;
+            align-items: center;
+            gap: 32px;
+            margin-top: 100px;
+        }
+    
+        .text {
+            font-size: 64px;
+        }
+    
+        .title {
+            font-size: 20px;
+        }
+    
+        .sub-text {
+            font-size: 20px;
+        }
+    
+        .welcome-image {
+            margin-top: 0;
+        }
+    }
+
+    @media screen and (min-width: 1158px) {
+        .welcome {
+            flex-direction: row;
+            align-items: center;
+            gap: 32px;
+            margin-top: 100px;
+        }
+    
+        .text {
+            font-size: 64px;
+        }
+    
+        .title {
+            font-size: 20px;
+        }
+    
+        .sub-text {
+            font-size: 20px;
+        }
+    
+        .welcome-image {
+            margin-top: 0;
+        }
+    }
