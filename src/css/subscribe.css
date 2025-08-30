@@ -1,0 +1,126 @@
+.subscribe {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.subscribe-box {
+    margin-bottom: 32px;
+}
+
+.subscribe-title {
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+    max-width: 258px;
+}
+
+.subscribe-subtitle {
+    font-size: 18px;
+    margin-bottom: 32px;
+    max-width: 288px;
+}
+
+.subscribe-fild-box {
+    margin-bottom: 16px;
+}
+
+.subscribe-input {
+    border: 1px solid rgba(11, 8, 3, 0.15);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 375px;
+    height: 40px;
+    padding: 8px 12px;
+    background-color: transparent;
+    outline: transparent;
+    margin-bottom: 24px;
+}
+
+.subscribe-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+    color: #fff;
+    fill: #fff;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 100%;
+    min-width: 288px;
+    max-width: 375px;
+    height: 44px;
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+    background-color: #6f4e37;
+    border: transparent;
+    transition: opacity 250ms ease-in-out;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    opacity: 0.5;
+}
+
+.subscribe-btn:active {
+    background-color: #6f4e37;
+}
+
+.subscribe-text {
+    font-size: 12px;
+}
+
+.subscribe-img {
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+
+@media screen and (min-width:768px) {
+
+    .subscribe-title {
+        max-width: 100%;
+    }
+
+    .subscribe-subtitle {
+        max-width: 100%;
+    }
+
+    .subscribe-fild-box {
+        display: flex;
+        column-gap: 12px;
+    }
+
+    .subscribe-input {
+        width: 340px;
+        margin-bottom: 0;
+    }
+
+    .subscribe-btn {
+        max-width: 158px;
+    }
+}
+
+
+@media screen and (min-width:1440px) {
+
+    .subscribe-container {
+        display: flex;
+        gap: 32px;
+    }
+
+    .subscribe-box {
+        margin: auto 0;
+    }
+
+    .subscribe-title {
+        font-size: 48px;
+        width: 616px;
+    }
+
+    .subscribe-subtitle {
+        width: 640px;
+    }
+}
