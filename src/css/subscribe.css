@@ -1,18 +1,9 @@
-.subscribe {
-    padding-top: 64px;
-    padding-bottom: 64px;
-}
 
 .subscribe-box {
     margin-bottom: 32px;
 }
 
 .subscribe-title {
-    font-family: "Aboreto", sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
     margin-bottom: 24px;
     max-width: 258px;
 }
@@ -28,7 +19,7 @@
 }
 
 .subscribe-input {
-    border: 1px solid rgba(11, 8, 3, 0.15);
+    border: 1px solid var(--opacity-neutral-darkest-15);
     border-radius: 12px;
     width: 100%;
     max-width: 375px;
@@ -45,16 +36,16 @@
     align-items: center;
     gap: 12px;
     font-weight: 500;
-    color: #fff;
-    fill: #fff;
+    font-size: 16px;
+    color: var(--color-white);
+    fill: var(--color-white);
     border-radius: 100px;
     padding: 10px 24px;
     width: 100%;
-    min-width: 288px;
     max-width: 375px;
     height: 44px;
-    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
-    background-color: #6f4e37;
+    box-shadow: 0 1px 2px 0 var(--opacity-neutral-darkest-5), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px var(--opacity-neutral-darkest-15), inset 0 2px 1px 0 var(--opacity-white-20), inset 0 32px 24px 0 var(--opacity-white-5);
+    background-color: var(--color-coffee-dark);
     border: transparent;
     transition: opacity 250ms ease-in-out;
 }
@@ -65,7 +56,7 @@
 }
 
 .subscribe-btn:active {
-    background-color: #6f4e37;
+    background-color: var(--color-coffee-dark);
 }
 
 .subscribe-text {
@@ -116,7 +107,6 @@
     }
 
     .subscribe-title {
-        font-size: 48px;
         width: 616px;
     }
 
