@@ -1,0 +1,57 @@
+/*-------mobile-first------*/
+.quality {
+    padding: 60px 0;
+}
+
+.quality-tagline {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #0b0803;
+}
+
+.quality-title {
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #0b0803;
+}
+
+.quality-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #0b0803;
+    margin-bottom: 32px;
+}
+
+.quality-img {
+    border-radius: 32px;
+    margin-bottom: 32px;
+}
+
+.quality-item-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #0b0803;
+    margin-bottom: 8px;
+}
+
+.quality-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #0b0803;
+    padding-bottom: 24px;
+}
+/*---------tablet------------*/
