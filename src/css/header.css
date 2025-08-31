@@ -60,7 +60,7 @@
 @media only screen and (min-width: 1440px) {
 }
 
-/* mobile mune */
+/* mobile menu */
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -93,7 +93,7 @@
   justify-content: space-between;
 }
 
-.mobile-munu-btn {
+.mobile-menu-btn {
   padding: 0;
   margin-right: 12px;
   border: none;
@@ -114,9 +114,6 @@
   flex-direction: column;
   gap: 32px;
   align-items: center;
-}
-
-.mobile-menu-nav-item {
 }
 
 .mobile-menu-nav-link {
