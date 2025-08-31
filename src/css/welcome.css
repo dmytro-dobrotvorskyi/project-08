@@ -1,131 +1,125 @@
+.welcome-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .title {
-    font-family: var(--font-family);
+    font-family: "Quicksand", sans-serif;
     font-weight: 600;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.50;
     color: #0b0803;
 }
 
 .text {
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 48px;
+    font-size: 36px;
     line-height: 1.2;
-    letter-spacing: -0.01em;
     color: #0b0803;
+    text-align: flex-start;
+    letter-spacing: -0.01em;
+    margin-bottom: 32px;
 }
 
 .sub-text {
-    display: flex;
-    font-family: var(--font-family);
+    font-family: "Quicksand", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
     color: #0b0803;
-}
-
-.btn {
-    border-radius: 100px;
-    padding: 10px 24px;
-    width: 181px;
-    height: 44px;
-    margin-top: 32px;
-}
-
-.welcome {
-    align-items: center;
-    justify-content: space-between;
-    gap: 32px;
-    margin-top: 64px;
-}
-
-.welcome-wrapper {
-    width: 1312px;
-    height: auto;
-    flex-direction: column;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 32px;
+    margin-bottom: 32px;
 }
 
 .welcome-image {
-    display: flex;
-    justify-content: center;
+    margin-top: 32px;    
+}
+
+.welcome-img {
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-flex;
     align-items: center;
-    margin-top: 80px;
+    justify-content: center;
+    gap: 8px;
+    background: #6a513c;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 288px;
+    height: 44px;
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+    background: #6f4e37;
 }
 
-
-
-.welcome-header {
-    width: auto;
-    display: block;
+.icon-map-pin {
+    fill: #fff;
 }
 
-
- @media screen and (min-width: 768px) {
-    .container {
-        display: flex;
-        justify-content: space-between;
+@media (min-width: 768px) {
+    .welcome-info {
+        flex-direction: row;
+        gap: 32px;
+        align-items: flex-start;
     }
 
- }
-
- @media screen and (min-width: 1158px) {
-    .container {
-        display: flex;
-        justify-content: space-between;
-    }
-    
- }
-
-    @media screen and (min-width: 768px) {
-        .welcome {
-            flex-direction: row;
-            align-items: center;
-            gap: 32px;
-            margin-top: 100px;
-        }
-    
-        .text {
-            font-size: 64px;
-        }
-    
-        .title {
-            font-size: 20px;
-        }
-    
-        .sub-text {
-            font-size: 20px;
-        }
-    
-        .welcome-image {
-            margin-top: 0;
-        }
+    .title {
+        margin-bottom: 16px;
     }
 
-    @media screen and (min-width: 1158px) {
-        .welcome {
-            flex-direction: row;
-            align-items: center;
-            gap: 32px;
-            margin-top: 100px;
-        }
-    
-        .text {
-            font-size: 64px;
-        }
-    
-        .title {
-            font-size: 20px;
-        }
-    
-        .sub-text {
-            font-size: 20px;
-        }
-    
-        .welcome-image {
-            margin-top: 0;
-        }
+    .text {
+        margin: 0;
     }
+
+    .welcome-header {
+        width: 336px;
+    }
+
+    .welcome-img {
+        margin-top: 32px;
+        border-radius: 40px
+    }
+
+    .btn {
+        width: auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .welcome-info {
+        flex-direction: row;
+        gap: 32px;
+        align-items: flex-start;
+    }
+
+    .title {
+        margin-bottom: 16px;
+    }
+
+    .text {
+        margin: 0;
+    }
+
+    .welcome-header {
+        width: 640px;
+    }
+
+    .welcome-img {
+        margin-top: 32px;
+        border-radius: 40px
+    }
+
+    .btn {
+        width: auto;
+    }
+}
+

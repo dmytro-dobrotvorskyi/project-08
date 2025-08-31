@@ -1,28 +1,59 @@
 <section class="welcome">
     <div class="container welcome-wrapper">
-        <div class="welcome-header">
-            <h2 class="title">Welcome</h2>
-            <p class="text">Our Journey: Passion for Quality Coffee</p>
+        <div class="welcome-info">
+            <div class="welcome-header">
+                <p class="title">Welcome</p>
+                <h2 class="text">Our Journey: Passion for Quality Coffee</h2>
+            </div>
+
+            <div class="welcome-header">
+                <p class="sub-text">
+                  At Coffee Joy, we believe that every cup tells a story.
+                  Our mission is to bring you the finest coffee experiences,
+                  crafted with care and dedication.
+                  We are committed to sourcing high-quality beans and roasting them to perfection,
+                  ensuring each sip is a delight.
+                </p>
+                <button class="btn" type="button" anchor-href="#location">Find Location
+                    <svg class="icon-map-pin" width="24" height="24">
+                        <use href="../img/svg/symbol-defs.svg#icon-map-pin"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
 
-        <div class="welcome-content">
-            <p class="sub-text">
-              At Coffee Joy, we believe that every cup tells a story.
-              Our mission is to bring you the finest coffee experiences,
-              crafted with care and dedication.
-              We are committed to sourcing high-quality beans and roasting them to perfection,
-              ensuring each sip is a delight.
-            </p>
-
-            <button class="btn" type="button">Find Location
-                <svg class="icon-map-pin" width="24" height="24">
-                    <use href="../img/svg/symbol-defs.svg#icon-map-pin"></use>
-                </svg>
-            </button>
+        <div class="welcome-image">
+            <picture class="welcome-img">
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ../img/welcome/cofe-desktop-1-min.jpg    1x,
+                      ../img/welcome/cofe-desktop-1@2x-min.jpg 2x
+                    "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../img/welcome/cofe-tablet-1-min.jpg 1x,
+                        ../img/welcome/cofe-tablet-1@2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ../img/welcome/cofe-tablet-1-min.jpg 1x,
+                        ../img/welcome/cofe-tablet-1@2x-min.jpg 2x
+                      "
+                    />
+                    <img
+                      src="../img/welcome/cofe-desktop-1-min.jpg 1x"
+                      srcset="../img/welcome/cofe-desktop-1@2x-min.jpg 2x"
+                      alt="Coffe Maker"
+                      width="1312"
+                      height="738"
+                      loading="lazy"
+                    />
+                </picture>
         </div>
     </div>
-    
-        <div class="welcome-image">
-            <img src="../img/welcome/Coffe-make-desktop.png" alt="Coffee Cup" class="welcome-img">
-        </div>
 </section>
