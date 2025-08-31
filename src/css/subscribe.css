@@ -30,6 +30,15 @@
     margin-bottom: 24px;
 }
 
+.subscribe-input:focus::placeholder {
+    color: transparent;
+}
+
+/* .subscribe-input:invalid {
+    border: 1px solid var(--color-error-red);
+    background-color: #fff;
+} */
+
 .subscribe-btn {
     display: flex;
     justify-content: center;
