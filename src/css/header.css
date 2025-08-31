@@ -1,1 +1,134 @@
+/* Styles for Mobile devices */
 
+.header-logo {
+  padding: 18px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav-list {
+  display: none;
+}
+
+.burger-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.burger-btn-icon {
+  display: block;
+  fill: var(--color-scheme-1-text);
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .header-container {
+    padding: 0 64px;
+  }
+
+  .burger-btn {
+    display: none;
+  }
+
+  .header-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .header-nav-link {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 24px 0;
+    transition: opacity 250ms ease-in-out;
+  }
+
+  .header-nav-link:hover,
+  .header-nav-link:focus {
+    opacity: 0.5;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+}
+
+/* mobile menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-scheme-1-background);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms ease-in-out;
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mobile-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-menu-btn {
+  padding: 0;
+  margin-right: 12px;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-menu-btn-icon {
+  display: block;
+  fill: var(--color-scheme-1-text);
+}
+
+.mobile-menu-nav {
+  margin: auto;
+}
+
+.mobile-menu-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.mobile-menu-nav-link {
+  font-weight: 400;
+  font-size: 16px;
+  transition: 250ms ease-in-out;
+}
+
+.mobile-menu-nav-link:hover,
+.mobile-menu-nav-link:focus {
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
