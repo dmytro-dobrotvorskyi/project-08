@@ -67,6 +67,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 24px;
+        justify-content: center;
    
     }
 
@@ -77,6 +78,38 @@
 
     .quality-item:last-child {
         flex: 1 1 100%;
-        max-width: 704px;
+        
+    }
+}
+/*---------desktop----------*/
+@media screen and (min-width: 1440px) {
+    .quality-list {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    .quality-item {
+        flex: 1 1 calc((100% - 48px) / 3);
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .quality-img {
+        max-width: 100%;
+        margin: 0 auto 24px auto;
+        display: block;
+    }
+
+    .quality-item-title,
+    .quality-item-text {
+        text-align: center;
+}
+
+    .quality-title,
+    .quality-text {
+        padding-left: 336px;
+        padding-right: 336px;
     }
 }
