@@ -114,6 +114,10 @@
             url(/img/hero/hero-desktop-min.jpg);
     }
 
+    .section-container {
+        padding: 0 64px;
+    }
+
     .hero-title {
         font-size: 56px;
         height: 201px;
