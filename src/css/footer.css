@@ -1,21 +1,126 @@
 .footer {
-  padding: 20px 0;
+  background-color: #b58869;
 }
-.footer-desc {
-  text-align: center;
+.page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 24px;
+  height: 601px;
 }
-.footer-link {
-  position: relative;
+.footer_block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+  border: 1px solid rgba(11, 8, 3, 0.15);
+  border-radius: 40px;
+  padding: 32px 48px;
+  background-color: #c29d84;
 }
-.footer-link::before {
-  content: '';
-  position: absolute;
-  bottom: 6%;
-  left: 50%;
-  transform: translateX(-50%) skewX(-12deg);
-  z-index: -1;
-  width: 110%;
-  height: 24%;
-  background-color: #41d1ff;
-  transition: 200ms ease;
+.footer-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer-logo {
+  width: 196px;
+  height: 84px;
+}
+.footer_networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.networks_list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 12px;
+}
+.networks_item {
+  width: 32px;
+  height: 32px;
+}
+.networks_icon {
+  width: 28px;
+  height: 27px;
+}
+.networks_icon {
+  justify-content: center;
+}
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+  width: 84px;
+}
+.footer-nav-item {
+  font-size: 16px;
+}
+.credits {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 32px;
+  font-size: 14px;
+  width: 288px;
+  height: 21px;
+  padding: 0 21.5px;
+}
+@media only screen and (min-width: 768px) {
+  .page-footer {
+    padding-bottom: 24px;
+    height: 257px;
+  }
+  .footer-part {
+    flex-direction: row;
+  }
+  .footer-nav {
+    flex-direction: row;
+  }
+  .footer_block {
+    width: 100%;
+  }
+  .footer-logo {
+    width: 84px;
+    height: 36px;
+  }
+  .networks_item {
+    width: 24px;
+    height: 24px;
+  }
+  .networks_icon {
+    width: 20px;
+    height: 21px;
+  }
+  .footer-nav {
+    width: 456px;
+  }
+  .credits {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .page-footer {
+    height: 201px;
+  }
+  .footer_block {
+    width: 100%;
+    flex-direction: row;
+    gap: 540px;
+  }
+  .networks_item {
+    width: 24px;
+    height: 24px;
+  }
 }
