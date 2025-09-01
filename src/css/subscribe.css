@@ -24,6 +24,7 @@
     border: 1px solid var(--opacity-neutral-darkest-15);
     border-radius: 12px;
     width: 100%;
+    font-size: 16px;
     max-width: 375px;
     height: 40px;
     padding: 8px 12px;
