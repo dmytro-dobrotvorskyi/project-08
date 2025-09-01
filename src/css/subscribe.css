@@ -16,28 +16,44 @@
 
 .subscribe-fild-box {
     margin-bottom: 16px;
+    position: relative;
+    align-items: center;
 }
 
 .subscribe-input {
     border: 1px solid var(--opacity-neutral-darkest-15);
     border-radius: 12px;
     width: 100%;
+    font-size: 16px;
     max-width: 375px;
     height: 40px;
     padding: 8px 12px;
     background-color: transparent;
     outline: transparent;
-    margin-bottom: 24px;
 }
 
 .subscribe-input:focus::placeholder {
     color: transparent;
 }
 
-/* .subscribe-input:invalid {
+.subscribe-input:invalid:focus:not(:placeholder-shown) {
     border: 1px solid var(--color-error-red);
-    background-color: #fff;
-} */
+    color: var(--color-error-red);
+}
+
+.subscribe-input:invalid:focus:not(:placeholder-shown) + .subscribe-eror {
+    opacity: 1;
+}
+
+.subscribe-eror {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    font-size: 12px;
+    color: var(--color-error-red);
+    opacity: 0;
+}
+
 
 .subscribe-btn {
     display: flex;
@@ -56,6 +72,7 @@
     box-shadow: 0 1px 2px 0 var(--opacity-neutral-darkest-5), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px var(--opacity-neutral-darkest-15), inset 0 2px 1px 0 var(--opacity-white-20), inset 0 32px 24px 0 var(--opacity-white-5);
     background-color: var(--color-coffee-dark);
     border: transparent;
+    margin-top: 24px;
     transition: opacity 250ms ease-in-out;
 }
 
@@ -90,16 +107,16 @@
 
     .subscribe-fild-box {
         display: flex;
-        column-gap: 12px;
+        column-gap: 24px;
     }
 
     .subscribe-input {
         width: 340px;
-        margin-bottom: 0;
     }
 
     .subscribe-btn {
         max-width: 158px;
+        margin-top: 0;
     }
 }
 
