@@ -30,7 +30,7 @@
     overflow: hidden;
 }
 
-.btn {
+.welcome-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -50,8 +50,8 @@
     background: #6f4e37;
 }
 
-.btn:hover,
-.btn:focus {
+.welcome-btn:hover,
+.welcome-btn:focus {
     opacity: 0.5;
 }
 
@@ -83,7 +83,7 @@
         border-radius: 40px
     }
 
-    .btn {
+    .welcome-btn {
         width: auto;
     }
 }
@@ -112,7 +112,7 @@
         border-radius: 40px
     }
 
-    .btn {
+    .welcome-btn {
         width: auto;
     }
 }
