@@ -5,12 +5,15 @@
             <p class="subscribe-subtitle">Experience the joy of coffee delivered right to your door. Sign up today!</p>
             <form class="subscribe-form">
                 <div class="subscribe-fild-box">
-                    <input class="subscribe-input" type="email" name="user-email" id="subscribe-email" placeholder="Your Email Here" required>
+                        <div class="subscribe-eror-box">
+                            <input class="subscribe-input" type="email" name="user-email" id="subscribe-email" placeholder="Your Email Here" required>
+                            <span class="subscribe-eror">Error Text</span>
+                        </div>
                     
                     <button class="subscribe-btn" type="submit">
                         Subscribe
                         <svg class="icon-chevrons-right" width="24" height="24">
-                            <use href="/src//img/svg/symbol-defs.svg#icon-chevrons-right"></use>
+                            <use href="/img/svg/symbol-defs.svg#icon-chevrons-right"></use>
                         </svg>
                     </button>
                     <label class="subscribe-label" for="subscribe-email"></label>
@@ -22,15 +25,15 @@
         </div>
         <picture>
             <source media="(min-width: 1440px)" 
-            srcset="/src/img/subscribe/placeholder-image-desc-min.jpg 1x,
-                /src/img/subscribe/placeholder-image-desc@2x-min.jpg 2x">
+            srcset="/img/subscribe/placeholder-image-desc-min.jpg 1x,
+                /img/subscribe/placeholder-image-desc@2x-min.jpg 2x">
             <source media="(min-width: 768px)" 
-            srcset="/src/img/subscribe/placeholder-image-tab-min.jpg 1x,
-                /src/img/subscribe/placeholder-image-tab@2x-min.jpg 2x">
+            srcset="/img/subscribe/placeholder-image-tab-min.jpg 1x,
+                /img/subscribe/placeholder-image-tab@2x-min.jpg 2x">
             <source media="(max-width: 767px)" 
-            srcset="/src/img/subscribe/placeholder-image-mob-min.jpg 1x,
-                /src/img/subscribe/placeholder-image-mob@2x-min.jpg 2x">
-            <img class="subscribe-img" src="/src/img/subscribe/placeholder-image-desc-min.jpg" 
+            srcset="/img/subscribe/placeholder-image-mob-min.jpg 1x,
+                /img/subscribe/placeholder-image-mob@2x-min.jpg 2x">
+            <img class="subscribe-img" src="/img/subscribe/placeholder-image-desc-min.jpg" 
                 alt="people in the office at the computer"
                 width="640" 
                 height="400">
