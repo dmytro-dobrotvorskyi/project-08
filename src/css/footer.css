@@ -8,6 +8,7 @@
   flex-direction: column;
   gap: 32px;
   padding-top: 24px;
+  padding-bottom: 24px;
   height: 601px;
 }
 .footer_block {
@@ -61,6 +62,9 @@
   gap: 32px;
   width: 84px;
 }
+.footer-nav-item {
+  height: 24px;
+}
 .footer-nav-link {
   font-size: 16px;
   transition: opacity 250ms ease-in-out;
@@ -82,7 +86,6 @@
 }
 @media only screen and (min-width: 768px) {
   .page-footer {
-    padding-bottom: 24px;
     height: 257px;
   }
   .footer-part {
