@@ -47,6 +47,10 @@
   --second-family: 'Aboreto', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
