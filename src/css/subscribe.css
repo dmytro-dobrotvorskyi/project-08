@@ -14,7 +14,7 @@
     max-width: 288px;
 }
 
-.subscribe-fild-box {
+.subscribe-field-box {
     margin-bottom: 16px;
     position: relative;
     align-items: center;
@@ -30,6 +30,8 @@
     padding: 8px 12px;
     background-color: transparent;
     outline: transparent;
+    transition: border 250ms ease-in-out,
+    color 250ms ease-in-out;
 }
 
 .subscribe-input:focus::placeholder {
@@ -41,17 +43,18 @@
     color: var(--color-error-red);
 }
 
-.subscribe-input:invalid:focus:not(:placeholder-shown) + .subscribe-eror {
+.subscribe-input:invalid:focus:not(:placeholder-shown) + .subscribe-error {
     opacity: 1;
 }
 
-.subscribe-eror {
+.subscribe-error {
     position: absolute;
     top: 40px;
     left: 0;
     font-size: 12px;
     color: var(--color-error-red);
     opacity: 0;
+    transition: opacity 250ms ease-in-out;
 }
 
 
@@ -105,7 +108,7 @@
         max-width: 100%;
     }
 
-    .subscribe-fild-box {
+    .subscribe-field-box {
         display: flex;
         column-gap: 24px;
     }
