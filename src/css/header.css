@@ -73,6 +73,7 @@
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms ease-in-out;
+  z-index: 999;
 }
 .mobile-menu.is-open {
   opacity: 1;
@@ -119,7 +120,7 @@
 .mobile-menu-nav-link {
   font-weight: 400;
   font-size: 16px;
-  transition: 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
 }
 
 .mobile-menu-nav-link:hover,
