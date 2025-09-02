@@ -13,7 +13,7 @@
 }
 
 .quality-title {
-    margin-bottom: 16px;;
+    margin-bottom: 16px;
 }
 
 .quality-text {
@@ -84,7 +84,6 @@
 /*---------desktop----------*/
 @media screen and (min-width: 1440px) {
     .quality-item {
-        width: 422px;
         width: calc((100% - 48px) / 3);
     }
     .quality-title {
