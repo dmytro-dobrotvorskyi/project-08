@@ -1,152 +1,141 @@
 .container-location {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
 }
 
 .tagline {
-font-family: var(--font-family);
-font-weight: 600;
-font-size: 16px;
-line-height: 1.5;
-color: var(--color-scheme-1-text);
-margin-bottom: 16px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-scheme-1-text);
+  margin-bottom: 16px;
 }
 
 .location-title {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .location-text {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .location-list {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .address-item-icon {
-    display: block;
-    margin-bottom: 16px;
+  display: block;
+  margin-bottom: 16px;
 }
 
 .address-title {
-font-style: normal;    
-font-family: var(--second-family);
-font-weight: 400;
-font-size: 20px;
-line-height: 1.4;
-letter-spacing: -0.01em;
-color: var(--color-scheme-1-text);
-margin-bottom: 8px;
+  font-style: normal;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: var(--color-scheme-1-text);
+  margin-bottom: 8px;
 }
 
-
-
 .location-link {
-font-style: normal;    
-font-family: var(--font-family);
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-text-decoration: underline;
-text-decoration-skip-ink: none;
-color: var(--color-scheme-1-text);
-display: block;
-height: 24px;
-transition: opacity 250ms ease-in-out;
+  font-style: normal;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--color-scheme-1-text);
+  display: block;
+  height: 24px;
+  transition: opacity 250ms ease-in-out;
 }
 
 .location-direction:hover,
 .location-direction:focus,
 .location-link:hover,
 .location-link:focus {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .location-address-text {
-    font-style: normal;
-    margin-bottom: 16px;
-    font-family: var(--font-family);
-    font-size: 16px;
+  font-style: normal;
+  margin-bottom: 16px;
+  font-family: var(--font-family);
+  font-size: 16px;
 }
 
 .location-direction {
-font-style: normal;    
-font-family: var(--font-family);
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-color: var(--color-neutral-darkest);
-display: flex;
-align-items: center;
-gap: 8px;
-transition: opacity 250ms ease-in-out;
+  font-style: normal;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-neutral-darkest);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 250ms ease-in-out;
 }
 
 .direction-wrap-svg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .location-direction-svg {
-    flex-shrink: 1;
-    width: 100%;
-    height: 100%;
+  flex-shrink: 1;
+  width: 100%;
+  height: 100%;
 }
 
 .map {
-    border-radius: 40px;
-    min-width: 288px;
-    width: 100%;
-    height: 307px;
-    max-height: 100%;
-    border: 0;
+  border-radius: 40px;
+  min-width: 288px;
+  width: 100%;
+  height: 307px;
+  max-height: 100%;
+  border: 0;
 }
-
-
 
 @media only screen and (min-width: 768px) {
-    .map {
-            min-width: 704px;
-            height: 377px;
-        }
+  .map {
+    min-width: 704px;
+    height: 377px;
+  }
 
-    .location-list {
-        flex-direction: row;
-        gap: 40px;
-        }
-    .location-item {
-        width: 208px;
-    }
-
+  .location-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .location-item {
+    width: 208px;
+  }
 }
-
 
 @media only screen and (min-width: 1440px) {
-    .map {
-        min-width: 869px;
-        min-height: 697px;
-    }
-    .location-item {
-        width: 419px;
-        }
-    .location-list {
-        flex-direction: column;
-        align-items: flex-start;
-
-    }
-    .container-location {
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 24px;
-    }
-
+  .map {
+    min-width: 869px;
+    min-height: 697px;
+  }
+  .location-item {
+    width: 419px;
+  }
+  .location-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container-location {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+  }
 }
-
