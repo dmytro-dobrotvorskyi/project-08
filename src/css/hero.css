@@ -1,4 +1,7 @@
 .section-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url(/img/hero/hero-mobile-min.jpg);
+  min-width: 320px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -48,6 +51,7 @@
     inset 0 32px 24px 0 var(--opacity-white-5);
   background: var(--color-coffee-dark);
   display: block;
+  transition: opacity 250ms ease-in-out;
 }
 
 .button-hero:hover,
@@ -62,14 +66,6 @@
 
 .button-hero:disabled {
   opacity: 0.2;
-}
-
-@media only screen and (max-width: 767px) {
-  .section-hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(/img/hero/hero-mobile-min.jpg);
-    min-width: 320px;
-  }
 }
 
 @media only screen and (max-width: 767px) and (min-resolution: 2x) {
