@@ -43,7 +43,28 @@
     color: var(--color-error-red);
 }
 
-.subscribe-input:invalid:focus:not(:placeholder-shown) + .subscribe-error {
+.subscribe-input:valid:focus:not(:placeholder-shown) {
+    border: 1px solid darkgreen;
+}
+
+.subscribe-input:valid:focus:not(:placeholder-shown) + .icon-checkmark {
+    display: block;
+}
+
+.input-svg-box {
+    position: relative;
+}
+
+.icon-checkmark {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    fill: darkgreen;
+    display: none;
+}
+
+.subscribe-input:invalid:focus:not(:placeholder-shown) + * + .subscribe-error {
     opacity: 1;
 }
 
