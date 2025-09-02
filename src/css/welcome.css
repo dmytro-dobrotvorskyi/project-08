@@ -4,7 +4,7 @@
     align-items: flex-start;
 }
 
-.welcome-title {
+.welcome-text {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 16px;
@@ -13,7 +13,7 @@
     margin-bottom: 16px;
 }
 
-.welcome-text {
+.welcome-title {
     margin-bottom: 32px;
 }
 
@@ -67,11 +67,11 @@
         align-items: flex-start;
     }
 
-    .welcome-title {
+    .welcome-text {
         margin-bottom: 16px;
     }
 
-    .welcome-text {
+    .welcome-title {
         margin: 0;
     }
 
@@ -96,11 +96,11 @@
         align-items: flex-start;
     }
 
-    .welcome-title {
+    .welcome-text {
         margin-bottom: 16px;
     }
 
-    .welcome-text {
+    .welcome-title {
         margin: 0;
     }
 
