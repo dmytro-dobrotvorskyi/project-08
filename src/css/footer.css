@@ -42,6 +42,13 @@
   align-items: center;
   gap: 12px;
 }
+.networks_link {
+  transition: opacity 250ms ease-in-out;
+}
+.networks_link:hover,
+.networks_link:focus {
+  opacity: 0.5;
+}
 .networks_item {
   display: flex;
   align-items: center;
