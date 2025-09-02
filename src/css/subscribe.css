@@ -5,13 +5,13 @@
 
 .subscribe-title {
     margin-bottom: 24px;
-    max-width: 258px;
+    max-width: 375px;
 }
 
 .subscribe-subtitle {
     font-size: 18px;
     margin-bottom: 32px;
-    max-width: 288px;
+    max-width: 375px;
 }
 
 .subscribe-field-box {
