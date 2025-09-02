@@ -1,0 +1,64 @@
+.experience-container {
+  display: flex;
+  flex-direction: column;
+}
+.experience-title {
+  margin-bottom: 24px;
+}
+.experience-additional-text {
+  margin-bottom: 32px;
+}
+.experience-title,
+.experience-additional-text {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 768px) {
+  .experience-title,
+  .experience-additional-text {
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .experience-title,
+  .experience-additional-text {
+    max-width: 1440px;
+  }
+}
+.experience-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.experience-item {
+  overflow: hidden;
+  border-radius: 32px;
+}
+.experience-item img {
+  width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .experience-item {
+    min-width: 288px;
+    max-width: 343px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .experience-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .experience-list {
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: 948px;
+  }
+}

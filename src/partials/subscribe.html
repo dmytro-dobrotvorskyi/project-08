@@ -1,0 +1,42 @@
+<section class="subscribe">
+    <div class="container subscribe-container">
+        <div class="subscribe-box">
+            <h2 class="subscribe-title">Join Our Coffee Community</h2>
+            <p class="subscribe-subtitle">Experience the joy of coffee delivered right to your door. Sign up today!</p>
+            <form class="subscribe-form">
+                <div class="subscribe-field-box">
+                        <div class="subscribe-error-box">
+                            <input class="subscribe-input" type="email" name="user-email" id="subscribe-email" placeholder="Your Email Here" required>
+                            <span class="subscribe-error">Error Text</span>
+                        </div>
+                    
+                    <button class="subscribe-btn" type="submit">
+                        Subscribe
+                        <svg class="icon-chevrons-right" width="24" height="24">
+                            <use href="/img/svg/symbol-defs.svg#icon-chevrons-right"></use>
+                        </svg>
+                    </button>
+                    <label class="subscribe-label" for="subscribe-email"></label>
+                </div>
+                <p class="subscribe-text">
+                    By clicking Get Started, you agree to our Terms and Conditions.
+                </p>
+            </form>
+        </div>
+        <picture>
+            <source media="(min-width: 1440px)" 
+            srcset="/img/subscribe/placeholder-image-desc-min.jpg 1x,
+                /img/subscribe/placeholder-image-desc@2x-min.jpg 2x">
+            <source media="(min-width: 768px)" 
+            srcset="/img/subscribe/placeholder-image-tab-min.jpg 1x,
+                /img/subscribe/placeholder-image-tab@2x-min.jpg 2x">
+            <source media="(max-width: 767px)" 
+            srcset="/img/subscribe/placeholder-image-mob-min.jpg 1x,
+                /img/subscribe/placeholder-image-mob@2x-min.jpg 2x">
+            <img class="subscribe-img" src="/img/subscribe/placeholder-image-desc-min.jpg" 
+                alt="people in the office at the computer"
+                width="704" 
+                height="400">
+        </picture>
+    </div>
+</section>
