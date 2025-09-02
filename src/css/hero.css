@@ -48,6 +48,7 @@
         inset 0 32px 24px 0 var(--opacity-white-5);
     background: var(--color-coffee-dark);
     display: block;
+    transition: opacity 250ms ease-in-out;
 }
 
 .button-hero:hover,
