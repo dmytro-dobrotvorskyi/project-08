@@ -76,7 +76,7 @@
     }
 
     .welcome-header {
-        width: 336px;
+        max-width: 336px;
     }
 
     .welcome-img {
