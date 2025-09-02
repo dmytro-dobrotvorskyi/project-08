@@ -56,12 +56,17 @@ body {
   color: var(--color-neutral-darkest);
   font-size: 18px;
   line-height: 1.5;
+}
+
+/*
+body {
   cursor: url("../img/coffe-bean.png"), auto;
 }
 
 a, button:hover {
   cursor: url("../img/coffe-cup.png"), auto;
 }
+//*/
 
 section {
   padding: 64px 0;
