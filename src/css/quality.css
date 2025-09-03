@@ -85,6 +85,7 @@
 @media screen and (min-width: 1440px) {
   .quality-item {
     width: calc((100% - 48px) / 3);
+    border-radius: 32px;
   }
   .quality-title {
     width: 768px;
@@ -111,5 +112,16 @@
 
   .quality-item:nth-child(1) .quality-item-text {
     margin-bottom: 24px;
+  }
+
+  .quality-item {
+    transition: scale 250ms ease-in-out, transform 250ms ease-in-out,
+      background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
+  }
+
+  .quality-item:hover {
+    transform: scale(1.05);
+    background-color: rgba(194, 157, 132, 0.15);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
   }
 }
