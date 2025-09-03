@@ -65,6 +65,7 @@
     display: flex;
     flex-direction: column;
     width: calc((100% - 24px) / 2);
+    min-height: 254px;
   }
 
   .testimonials-item-block {
@@ -83,7 +84,14 @@
   }
 
   .testimonials-item {
+    min-height: 304px;
     width: calc((100% - 72px) / 4);
+    transition: transform 250ms ease-in-out, background-color 250ms ease-in-out;
+  }
+
+  .testimonials-item:hover {
+    transform: scale(1.05);
+    background-color: var(--color-coffee);
   }
 
   .testimonials-item-text-coment {
