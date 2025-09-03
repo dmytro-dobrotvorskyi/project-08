@@ -9,15 +9,14 @@
       <form class="subscribe-form">
         <div class="subscribe-field-box">
           <div class="subscribe-error-box">
-            <input
-              class="subscribe-input"
-              type="email"
-              name="user-email"
-              id="subscribe-email"
-              placeholder="Your Email Here"
-              required
-            />
-            <span class="subscribe-error">Error Text</span>
+            <div class="input-svg-box">
+              <input class="subscribe-input" type="email" name="user-email" id="subscribe-email" placeholder="Your Email Here"
+                required>
+              <svg class="icon-checkmark" width="18" height="18">
+                <use href="/img/svg/symbol-defs.svg#icon-checkmark"></use>
+              </svg>
+              <span class="subscribe-error">Error Text</span>
+            </div>
           </div>
 
           <button class="subscribe-btn" type="submit">
