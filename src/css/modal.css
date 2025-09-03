@@ -154,3 +154,32 @@
         width: 274px;
     }
 }
+
+
+
+.scroll-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--color-coffee-dark);
+    fill: var(--color-white);
+    transform: rotate(-90deg);
+    transition: opacity 250ms ease-in-out;
+}
+
+.scroll-btn:hover,
+.scroll-btn:focus {
+    opacity: 0.5;
+}
+
+body:has(.section-hero:hover) .scroll-btn,
+body:has(.header:hover) .scroll-btn {
+    opacity: 0;
+    pointer-events: none;
+}
