@@ -37,7 +37,7 @@
   stroke: var(--color-neutral-darkest);
 }
 
-.testimonials-item-text-coment {
+.testimonials-item-text-comment {
   width: 100%;
   min-width: 224px;
 }
@@ -72,7 +72,7 @@
     margin-bottom: auto;
   }
 
-  .testimonials-item-text-coment {
+  .testimonials-item-text-comment {
     width: 276px;
   }
 }
@@ -94,7 +94,7 @@
     background-color: var(--color-coffee);
   }
 
-  .testimonials-item-text-coment {
+  .testimonials-item-text-comment {
     width: 246px;
   }
 }
