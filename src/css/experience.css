@@ -37,6 +37,7 @@
 .experience-item {
   overflow: hidden;
   border-radius: 32px;
+  transition: transform 250ms ease-in-out;
 }
 .experience-item img {
   width: 100%;
@@ -60,5 +61,9 @@
     flex-direction: column;
     justify-content: flex-start;
     max-height: 948px;
+  }
+
+  .experience-item:hover {
+    transform: scale(1.1);
   }
 }
